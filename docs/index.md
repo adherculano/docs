@@ -1,3 +1,6 @@
-# Docs (Pages + MkDocs)
+# Labs — portal
 
-Se você está lendo isto, o Pages funcionou . Oba 01 🎉
+## Áreas
+- [Financeiro](financeiro/index.md)
+- [TI](ti/index.md)
+- [RH](rh/index.md)
