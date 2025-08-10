@@ -14,5 +14,5 @@ plugins:
   - search
 nav:
   - Início: index.md
-  - Financeiro: index.md
-  - TI: index.md
+  - Financeiro: financeiro/index.md
+  - TI: ti/index.md
