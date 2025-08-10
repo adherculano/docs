@@ -1,0 +1,15 @@
+site_name: Docs
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - search.highlight
+plugins:
+  - search
+nav:
+  - Início: index.md
+  - Financeiro:
+    - Fechamento Mensal: financeiro/fechamento.md
+  - TI:
+    - Acesso VPN: ti/vpn.md
