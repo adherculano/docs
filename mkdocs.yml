@@ -3,8 +3,13 @@ theme:
   name: material
   language: pt-BR
   features:
+    - navigation.indexes     # ← habilita o clique na seção
     - navigation.instant
     - search.highlight
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  logo: assets/logo.png
 plugins:
   - search
 # nav:
