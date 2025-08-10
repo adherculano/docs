@@ -15,6 +15,4 @@ plugins:
 nav:
   - Início: index.md
   - Financeiro: index.md
-  #  - Fechamento Mensal: financeiro/fechamento.md
   - TI: index.md
-  #  - Acesso VPN: ti/vpn.md
