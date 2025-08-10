@@ -1,17 +1,18 @@
 name: Deploy MkDocs to GitHub Pages
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+  workflow_dispatch: {}      # só roda quando você clicar em "Run workflow"
+  pull_request:              # (opcional) só para TESTAR build em PR, sem publicar
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
 permissions:
   contents: read
   pages: write
   id-token: write
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+
 jobs:
   build:
+    if: github.event_name != 'workflow_dispatch' || always()   # builda em PR
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,14 +21,16 @@ jobs:
         with: { python-version: '3.x' }
       - run: pip install mkdocs-material
       - run: mkdocs build --strict
-      - uses: actions/upload-pages-artifact@v3
+      # só faz upload quando for deploy manual
+      - if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
         with: { path: site }
+
   deploy:
     needs: build
+    if: github.event_name == 'workflow_dispatch'   # só publica no manual
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    environment: { name: github-pages }
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
