@@ -14,7 +14,7 @@ plugins:
   - search
 nav:
   - Início: index.md
-  - Financeiro:
+  - Financeiro: index.md
   #  - Fechamento Mensal: financeiro/fechamento.md
-  - TI:
+  - TI: index.md
   #  - Acesso VPN: ti/vpn.md
