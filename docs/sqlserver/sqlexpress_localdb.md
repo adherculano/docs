@@ -1,4 +1,4 @@
-# instalação do sqlexpress como localdb
+# sqlexpress como localdb
 
 # O que é o LocalDB
 - Versão leve do SQL Server para desenvolvimento local.
