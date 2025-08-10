@@ -12,9 +12,9 @@ theme:
   logo: assets/logo.png
 plugins:
   - search
-nav:
-  - Início: index.md
-  - Financeiro:
-    - Fechamento Mensal: financeiro/fechamento.md
-  - TI:
-    - Acesso VPN: ti/vpn.md
+# nav:
+#   - Início: index.md
+#   - Financeiro:
+#     - Fechamento Mensal: financeiro/fechamento.md
+#   - TI:
+#     - Acesso VPN: ti/vpn.md
