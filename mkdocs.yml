@@ -12,9 +12,9 @@ theme:
   #logo: assets/logo.png
 plugins:
   - search
-nav:
-  - Início: index.md
-  - Financeiro:
-    - financeiro/index.md    
-  - TI:
-    - ti/index.md
+# nav:
+#   - Início: index.md
+#   - Financeiro:
+#     - financeiro/index.md    
+#   - TI:
+#     - ti/index.md
